@@ -4,7 +4,7 @@ defmodule AliceSlackAdapter.Mixfile do
   def project do
     [
       app: :alice_slack_adapter,
-      version: "0.1.0",
+      version: "2.0.0-alpha.1",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps()
@@ -12,14 +12,12 @@ defmodule AliceSlackAdapter.Mixfile do
   end
 
   def application do
-    [
-      extra_applications: [:logger]
-    ]
+    []
   end
 
   defp deps do
     [
-      {:slack, "~> 0.12.0"}
+      {:slack, "~> 0.12"}
     ]
   end
 end
