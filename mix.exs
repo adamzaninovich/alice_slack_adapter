@@ -19,7 +19,6 @@ defmodule AliceSlackAdapter.Mixfile do
 
   defp deps do
     [
-      {:alice, github: "adamzaninovich/a2", branch: "master"},
       {:slack, "~> 0.12.0"}
     ]
   end
